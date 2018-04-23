@@ -7,13 +7,13 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='command-center',  # Required
-    version='0.0.1',  # Required
+    name='command-center',
+    version='0.0.1',
     description='GUI window to easily run your own frequently used commands',
-    long_description=long_description,  # Optional
+    long_description=long_description,
     url='https://github.com/miniscruff/python-command-center',
-    author='Ronnie Smith',  # Optional
-    author_email='halfpint1170@gmail.com',  # Optional
+    author='Ronnie Smith',
+    author_email='halfpint1170@gmail.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
