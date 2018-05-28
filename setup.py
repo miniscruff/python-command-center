@@ -23,9 +23,11 @@ setup(
     ],
     keywords='development',
     py_modules=['pcc'],
+    package_dir={"": "src"},
     entry_points={
         'console_scripts': [
             'pcc=pcc:main',
+            'pcc-gui=pccgui:main',
         ],
     },
     project_urls={

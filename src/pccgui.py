@@ -1,18 +1,7 @@
-from subprocess import Popen
 import sys
-import os
-import json
+from subprocess import Popen
 from tkinter import Tk, Button
-
-
-def load_scripts():
-    if os.path.isfile('pcc.json'):
-        with open('pcc.json') as f:
-            return json.load(f)
-
-    if os.path.isfile('package.json'):
-        with open('package.json') as f:
-            return json.load(f)['scripts']
+from utils import load_scripts
 
 
 def parse_args():

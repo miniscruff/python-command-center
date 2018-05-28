@@ -10,6 +10,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 - Changelog
+- pcc command will now run commands from keys
+- pcc --commands will display the list of available commands
+
+### Changed
+- pcc-gui will now open the gui window
+
+### Removed
+- Support for package.json scripts, didnt quite work as expected
 
 ## 0.0.2 - 2018-05-28
 [source](https://github.com/miniscruff/python-command-center/tree/v0.0.2)
