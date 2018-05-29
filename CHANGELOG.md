@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [source](https://github.com/miniscruff/python-command-center/tree/master)
 [compare](https://github.com/miniscruff/python-command-center/compare/v0.0.4...master)
 
+## 0.0.5 - 2018-05-28
+[source](https://github.com/miniscruff/python-command-center/tree/v0.0.5)
+[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.4...v0.0.5)
+
+## Fixed
+- click missing from install requirements
+- utils and pccgui missing from package
+
 ## 0.0.4 - 2018-05-28
 [source](https://github.com/miniscruff/python-command-center/tree/v0.0.4)
 [compare](https://github.com/miniscruff/python-command-center/compare/v0.0.2...v0.0.4)
