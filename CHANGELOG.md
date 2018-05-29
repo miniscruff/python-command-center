@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased
 [source](https://github.com/miniscruff/python-command-center/tree/master)
-[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.2...master)
+[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.3...master)
+
+## 0.0.3 - 2018-05-28
+[source](https://github.com/miniscruff/python-command-center/tree/v0.0.3)
+[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.2...v0.0.3)
 
 ### Added
 - Changelog
@@ -18,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Removed
 - Support for package.json scripts, didnt quite work as expected
+- Support for extra commands in gui mode, may add back later
 
 ## 0.0.2 - 2018-05-28
 [source](https://github.com/miniscruff/python-command-center/tree/v0.0.2)
