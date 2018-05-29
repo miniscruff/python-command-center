@@ -1,21 +1,7 @@
-import sys
 from subprocess import Popen
 from tkinter import Tk, Button
 from utils import load_scripts
-
-
-def parse_args():
-    args_data = {}
-    extra = {}
-    for arg in sys.argv[1:]:
-        key, value = arg.split('=', maxsplit=1)
-        if key.startswith('--'):
-            args_data[key[2:]] = value
-        else:
-            extra[key] = value
-
-    args_data['extra'] = extra
-    return args_data
+import click
 
 
 def print_header(line):
@@ -32,39 +18,16 @@ def script_wrapper(script_command):
     return execute_script
 
 
-def print_help():
-    print("""usage: pcc [options] [extra_commands]
-    Will look for pcc.json or package.json on start
-
-    options:
-      --col=N           Specifies how many columns to display
-      extra_commands:   Can specify any number of extra commands to display by
-                        using key=value pairs. Note that the key should not
-                        contain an equal sign, but the value can.
-      """)
-
-
-def main():
-    if len(sys.argv) > 1 and (sys.argv[1] == 'help' or sys.argv[1] == '-h'):
-        print_help()
-        sys.exit()
-
-    arg_data = parse_args()
-    columns = int(arg_data['col']) if 'col' in arg_data else 8
+@click.command()
+@click.option('--col', default=6, help='How many columns of buttons')
+def main(col):
     scripts = load_scripts()
-    if len(arg_data['extra']) > 0:
-        scripts.update(arg_data['extra'])
-
-    if scripts is None or len(scripts) == 0:
-        print_help()
-        sys.exit()
-
     root = Tk()
     root.title('Python Command Center')
     button_settings = dict(ipadx=5, ipady=5, padx=3, pady=3, sticky='EW')
     for i, key in enumerate(scripts):
         button = Button(root, text=key, command=script_wrapper(scripts[key]))
-        button.grid(row=i // columns, column=i % columns, **button_settings)
+        button.grid(row=i//col, column=i % col, **button_settings)
     root.mainloop()
 
 

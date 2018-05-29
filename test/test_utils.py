@@ -15,11 +15,12 @@ def test_loads_pcc_file():
     raw_json = '{"a": "echo stuff", "b": "echo other"}'
     raw_dict = {
         'a': 'echo stuff',
-         'b': 'echo other',
+        'b': 'echo other',
      }
     with temp_file('pcc.json', raw_json):
         loaded_data = load_scripts()
         assert raw_dict == loaded_data
 
+
 def test_returns_none_if_missing():
-    assert load_scripts() == None
+    assert load_scripts() is None

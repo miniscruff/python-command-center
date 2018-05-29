@@ -14,7 +14,7 @@ def print_commands(ctx, param, value):
 @click.command()
 @click.option('--commands', is_flag=True, callback=print_commands,
               expose_value=False, is_eager=True,
-              help='Display the list of available commands in your pce file')
+              help='Display the list of available commands in your pcc file')
 @click.argument('script_keys', nargs=-1)
 def main(script_keys):
     scripts = load_scripts()
