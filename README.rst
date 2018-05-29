@@ -2,7 +2,8 @@
 Python Command Center
 =====================
 
-GUI window to easily run your own frequently used commands
+Save and run terminal commands for frequent use.
+Also supports a button grid GUI window for using a mouse.
 
 Installation
 ============
@@ -22,6 +23,12 @@ Create a ``pcc.json`` file to hold your commands.::
 Then simply run pcc in the terminal with your command key.::
 
    $ pcc test
+
+Note: You can run as many commands in sequential order as you want.
+For example ``pcc test lint`` would run test and then lint.
+
+GUI
+===
 
 If you want to display a button window for easy mouse use, use pcc-gui.::
 
