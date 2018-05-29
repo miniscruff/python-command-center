@@ -6,11 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 [source](https://github.com/miniscruff/python-command-center/tree/master)
-[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.3...master)
+[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.4...master)
 
-## 0.0.3 - 2018-05-28
-[source](https://github.com/miniscruff/python-command-center/tree/v0.0.3)
-[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.2...v0.0.3)
+## 0.0.4 - 2018-05-28
+[source](https://github.com/miniscruff/python-command-center/tree/v0.0.4)
+[compare](https://github.com/miniscruff/python-command-center/compare/v0.0.2...v0.0.4)
 
 ### Added
 - Changelog
@@ -23,6 +23,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 - Support for package.json scripts, didnt quite work as expected
 - Support for extra commands in gui mode, may add back later
+
+## 0.0.3 - Skipped due to failed pypi upload
 
 ## 0.0.2 - 2018-05-28
 [source](https://github.com/miniscruff/python-command-center/tree/v0.0.2)
