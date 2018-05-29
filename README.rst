@@ -12,24 +12,20 @@ Install from pypi using pip::
 
 Usage
 =====
-Simply run pcc in the terminal::
+Create a ``pcc.json`` file to hold your commands.::
 
-   $ pcc
+   {
+     "test": "pytest",
+     "lint": "flake8"
+   }
 
-Options
-=======
+Then simply run pcc in the terminal with your command key.::
 
-Columns
--------
-You can change the number of columns that command center will display by
-including a ``--col=N`` argument.::
+   $ pcc test
 
-   $ pcc --col=4
+If you want to display a button window for easy mouse use, use pcc-gui.::
 
-Extra Commands
---------------
-You can include additional commands for only the next execution by including
-key value pair arguments such as ``key=value``. Note that unless your key and
-value do not include spacing you will need to double quote the argument.::
+   $ pcc-gui
 
-   $ pcc "pytest abc=pytest a/b/c.py -x"
+Adding ``--help`` to pcc or pcc-gui will display helpful information.
+
