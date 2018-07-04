@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## Unreleased
 [source](https://github.com/miniscruff/python-command-center/tree/master)
 [compare](https://github.com/miniscruff/python-command-center/compare/v0.0.4...master)
+### Removed
+- Completed output at the end of running the command
 
 ## 0.0.5 - 2018-05-28
 [source](https://github.com/miniscruff/python-command-center/tree/v0.0.5)
