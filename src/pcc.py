@@ -22,7 +22,6 @@ def main(script_keys):
         command_call = scripts[key]
         with Popen(command_call.split(' '), stdout=PIPE) as proc:
             click.echo(proc.stdout.read())
-        click.echo('Completed: ' + key)
 
 
 if __name__ == '__main__':
