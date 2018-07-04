@@ -27,6 +27,9 @@ Then simply run pcc in the terminal with your command key.::
 Note: You can run as many commands in sequential order as you want.
 For example ``pcc test lint`` would run test and then lint.
 
+If you forget key of your command you can run ``pcc --commands`` to get a list
+of commands printed to the console.
+
 GUI
 ===
 
