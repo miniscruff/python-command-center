@@ -8,7 +8,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='command-center',
-    version='0.0.5',
+    version='0.0.6',
     description='Quick method for running frequently used terminal commands.',
     long_description=long_description,
     url='https://github.com/miniscruff/python-command-center',
