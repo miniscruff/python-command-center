@@ -30,7 +30,6 @@ def test_running_script(mock_popen, mock_load_scripts):
     result = runner.invoke(pcc.main, ['A'])
     mock_popen.called_once_with(['echo', 'stuff'])
     assert result.exit_code == 0
-    assert 'Completed: A\n' in result.output
 
 
 @patch('pcc.load_scripts')
